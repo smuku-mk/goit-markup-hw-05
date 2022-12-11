@@ -230,7 +230,8 @@ ul {
   background-color: var(--header-footer-bg);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
+      rgba(47, 48, 58, 0.4)
+    ),
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -345,7 +346,7 @@ ul {
 }
 .contacts-header-icon-smartphone {
   margin-right: 10px;
-  vertical-align: -2px;
+  vertical-align: -3px;
 }
 
 /* lorem ipsum icons */
@@ -355,41 +356,46 @@ ul {
 }
 
 /* our team icons */
-.our-team-icons {
+.our-team-container {
   display: flex;
   gap: 10px;
   justify-content: center;
-  align-items: center;
 }
-.our-team-icons > a > svg:hover {
+.our-team-links {
+  height: 44px;
+  border-radius: 50%;
+}
+.our-team-links:hover,
+.our-team-links:focus {
   --color2: var(--white-color);
   background-color: var(--brand-color);
-  border-radius: 50%;
 }
 
 /* our customers */
-.our-customers-list {
-  display: flex;
-  gap: 30px;
-}
 .our-customers-title {
   text-align: center;
   margin-bottom: 50px;
 }
-.our-customers-list > li > a > svg {
+.our-customers-container {
+  display: flex;
+  gap: 30px;
+}
+.our-customers-links {
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.our-customers-list > li > a:hover {
+.our-customers-links:hover,
+.our-customers-links:focus {
   --color2: var(--brand-color);
-}
-.our-customers-list > li > a > svg:hover {
   border-color: var(--brand-color);
 }
+
+/* join us */
 .join-us-container {
   margin-top: 12px;
 }
-.join-us {
+.join-us-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -398,15 +404,20 @@ ul {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-.join-us-links {
-  background-color: var(--join-us-links-bg);
-  --color2: var(--white-color);
-  border-radius: 50%;
-}
-.join-us-links:hover {
-  background-color: var(--brand-color);
-}
 .join-us-links-container {
   display: flex;
   gap: 10px;
+}
+.join-us-links {
+  height: 44px;
+  border-radius: 50%;
+}
+.join-us-links:hover,
+.join-us-links:focus {
+  background-color: var(--brand-color);
+}
+.join-us-svg {
+  background-color: var(--join-us-links-bg);
+  --color2: var(--white-color);
+  border-radius: 50%;
 }
