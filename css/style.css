@@ -362,7 +362,7 @@ ul {
   justify-content: center;
 }
 .our-team-links {
-  height: 44px;
+  font-size: 0;
   border-radius: 50%;
 }
 .our-team-links:hover,
@@ -381,7 +381,7 @@ ul {
   gap: 30px;
 }
 .our-customers-links {
-  height: 92px;
+  font-size: 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -409,7 +409,7 @@ ul {
   gap: 10px;
 }
 .join-us-links {
-  height: 44px;
+  font-size: 0;
   border-radius: 50%;
 }
 .join-us-links:hover,
