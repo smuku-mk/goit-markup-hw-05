@@ -10,6 +10,10 @@
   --header-footer-bg: #2f303a;
   --pictures-figcaption-border-color: #eeeeee;
   --join-us-links-bg: rgba(255, 255, 255, 0.1);
+  --header-border-bottom: #ececec;
+  --hero-bg-gradient: rgba(47, 48, 58, 0.4);
+  --our-strenghts-icon-bg: #f5f4fa;
+  --our-customers-links-border: #afb1b8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -206,7 +210,7 @@ ul {
 
 /* header */
 .header-border {
-  border-bottom: #ececec solid 1px;
+  border-bottom: var(--header-border-bottom) solid 1px;
 }
 .haeder-content {
   display: flex;
@@ -229,8 +233,8 @@ ul {
 .hero-section {
   background-color: var(--header-footer-bg);
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      var(--hero-bg-gradient),
+      var(--hero-bg-gradient)
     ),
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -351,7 +355,7 @@ ul {
 
 /* lorem ipsum icons */
 .lorem-ipsum-list > li > svg {
-  background-color: #f5f4fa;
+  background-color: var(--our-strenghts-icon-bg);
   margin-bottom: 30px;
 }
 
@@ -382,7 +386,7 @@ ul {
 }
 .our-customers-links {
   font-size: 0;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--our-customers-links-border);
   border-radius: 4px;
 }
 .our-customers-links:hover,
