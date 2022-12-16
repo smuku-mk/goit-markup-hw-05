@@ -473,3 +473,26 @@ ul {
   color: var(--white-color);
   background-color: var(--what-we-do-img-title-bg);
 }
+.test1 {
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+}
+.pictures-description {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--white-color);
+  padding: 49px 45px 49px 24px;
+}
+.test2 {
+  position: absolute;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transform-origin: bottom left;
+  transition: transform 250ms ease;
+}
+.pictures-figure:hover .test2 {
+  /* transform: translateY(0); */
+  transform-origin: top right;
+}
