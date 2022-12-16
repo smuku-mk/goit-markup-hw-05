@@ -14,6 +14,7 @@
   --hero-bg-gradient: rgba(47, 48, 58, 0.4);
   --our-strenghts-icon-bg: #f5f4fa;
   --our-customers-links-border: #afb1b8;
+  --what-we-do-img-title-bg: rgba(47, 48, 58, 0.8);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -452,4 +453,23 @@ ul {
   background-color: var(--join-us-links-bg);
   --color2: var(--white-color);
   border-radius: 50%;
+}
+
+/* hw5 */
+.what-we-do-pictures > li {
+  position: relative;
+  font-size: 0;
+}
+.what-we-do-img-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 27px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white-color);
+  background-color: var(--what-we-do-img-title-bg);
 }
