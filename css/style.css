@@ -65,9 +65,37 @@ ul {
 }
 .nav-portfolio {
   color: var(--brand-color);
+  position: relative;
+}
+.nav-portfolio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(45px);
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--brand-color);
 }
 .nav-agency {
   color: var(--brand-color);
+  position: relative;
+}
+.nav-agency::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(46px);
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--brand-color);
 }
 
 /* contacts */
