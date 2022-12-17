@@ -489,10 +489,8 @@ ul {
   top: 0;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transform-origin: bottom left;
   transition: transform 250ms ease;
 }
 .pictures-figure:hover .test2 {
-  /* transform: translateY(0); */
-  transform-origin: top right;
+  transform: translateY(0);
 }
