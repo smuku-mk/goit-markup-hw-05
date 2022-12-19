@@ -525,11 +525,6 @@ ul {
 }
 
 /* MODAL */
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
 .backdrop {
   position: fixed;
   display: flex;
@@ -542,6 +537,15 @@ ul {
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .modal {
   position: relative;
@@ -553,12 +557,13 @@ ul {
   border-radius: 4px;
   cursor: initial;
   transform: scale(1);
-  transition-property: transform;
+  transition-property: transform, border-radius;
   transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden .modal {
-  transform: scale(0.2);
+.is-hidden .modal {
+  transform: scale(0.1);
+  border-radius: 50%;
 }
 .modal-close-button {
   position: absolute;
