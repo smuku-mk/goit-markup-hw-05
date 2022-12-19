@@ -96,7 +96,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateY(46px);
+  transform: translateY(45px);
   height: 4px;
   border-radius: 2px;
   background-color: var(--brand-color);
